@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --white-color: #FFFFFF;
+    --light-gray-color: #d1cfcf;
+    --primary-color: #2c3b44;
+    --secondary-color: #0c1f3a;
+    --third-color: #c5ac82;
+    --fourth-color: #706450;
+    --italy-red: #ff3b3b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 480px) {
+    .header-menu {
+        font-size: 20px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        width: 100vw;
+        position: fixed;
+        
+        background-color: #2c3b44;
+        font-family: 'Meie Script', cursive;
+        z-index: 1;
+    }
+
+    .header-menu a {
+        padding: 2px;
+        text-decoration: none;
+        color: var(--light-gray-color);
+        }
+
+    .header-menu a:hover {
+        opacity: 0.3;
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--light-gray-color);
+    }
+
+    .header-logo {
+        height: 40px;
+    }
+
+    .opening-content {
+        padding: 440px 2px 2px 2px;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+
+        height: 100vh;
+        background: url(../images/opening-image.png) center center no-repeat;
+        background-size: cover;
+        color: var(--light-gray-color);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .opening-content h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .opening-content p {
+        font-size: 16px;
+    }
+
+    .about-us {
+        padding: 300px 2px 2px 2px;
+        font-size: 16px;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+
+        background: url(../images/italy-flag-2.png) center center no-repeat;
+        background-size: cover;
+        font-family: 'Courgette', cursive;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 300px 2px 2px 2px;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4px;
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 15px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+        border: 2px solid #0a9611;
+        box-shadow: 0 8px 15px rgba(34, 33, 33, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .card img:hover {
+        border: 2px solid #e74c3c
+    }
+
+    .card h2 {
+        margin-top: 10px;
+    }
+
+    .card p {
+        color: #555;
+    }
+
+    .card span {
+        font-weight: bold;
+        color: #e74c3c;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .final-form {
+        padding: 300px 2px 2px 2px;
+
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .final-form h3 {
+        padding: 10px;
+        font-size: 18px;
+
+        color: #726658;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 1.3;
+    }
+
+    .final-form p {
+        font-size: 16px;
+
+        font-style: normal;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 1.3;
+    }
+
+    .final-form form {
+        padding: 5px;
+        margin-top: 50px;
+
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-group label {
+        margin-bottom: 2px;
+
+        display: block;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 4px;
+
+        border: 1px solid #ddd;
+    }
+
+    .btn {
+        width: 80vw;
+        margin-top: 10px auto 0 auto;
+
+        display: block;
+        border: none;
+        background-color: #726658;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: hsl(216, 2%, 43%);
+    }
+
+    footer {
+        padding-top: 15px;
+        margin-top: 10px;
+        font-size: 10px;
+
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        background: var(--primary-color);
+        color: var(--light-gray-color);
+        font-family: 'Roboto', sans-serif;
+        background: url(../images/opening-image.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    .submitted-form-page-main-content {
+        height: 100vh;
+        width: 80vw;
+        text-align: center;
+        align-items: center;
+        padding-top: 200px;
+        margin: auto;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+    }
+
+    #back-to-home-button {
+        border: 2px solid var(--white-color);
+        border-radius: 8px;
+        background: var(--primary-color);
+        color: var(--white-color);
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    #back-to-home-button:hover {
+        background: var(--secondary-color);
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .header-menu {
+        width: 100vw;
+        background-color: #2c3b44;
+        font-size: 36px;
+        font-family: 'Meie Script', cursive;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 20px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .header-menu a {
+        text-decoration: none;
+        color: var(--light-gray-color);
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    .header-menu a:hover {
+        opacity: 0.3;
+        font-size: 38px;
+        text-decoration: none;
+        color: var(--light-gray-color);
+    }
+
+    .header-logo {
+        height: 100px;
+    }
+
+    .opening-content {
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        padding-top: 300px;
+        margin: auto 20px;
+        background: url(../images/opening-image.png) center center no-repeat;
+        background-size: cover;
+        color: var(--light-gray-color);
+        font-family: 'Meie Script', cursive;
+    }
+
+    .opening-content h1 {
+        font-size: 70px;
+        margin-bottom: 60px;
+    }
+
+    .opening-content p {
+        font-size: 50px;
+    }
+
+    .about-us {
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        padding: 150px 40px 40px 40px;
+        margin: auto 20px;
+        font-size: 40px;
+        background: url(../images/italy-flag-2.png) center center no-repeat;
+        background-size: cover;
+        font-family: 'Courgette', cursive;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: space-around;
+        padding-top: 150px;
+    }
+
+    .card-group {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 15px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+        border: 2px solid #0a9611;
+        box-shadow: 0 8px 15px rgba(34, 33, 33, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .card img:hover {
+        border: 2px solid #e74c3c
+    }
+
+    .card h2 {
+        margin-top: 10px;
+    }
+
+    .card p {
+        color: #555;
+    }
+
+    .card span {
+        font-weight: bold;
+        color: #e74c3c;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .final-form {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        padding-top: 150px;
+    }
+
+    .final-form h3 {
+        color: #726658;
+        text-align: center;
+        padding: 50px;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 1.3;
+    }
+
+    .final-form p {
+        font-style: normal;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 1.3;
+    }
+
+    .final-form form {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .btn {
+        display: block;
+        width: 200px;
+        border: none;
+        background-color: #726658;
+        color: #fff;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .btn:hover {
+        background-color: hsl(216, 2%, 43%);
+    }
+
+    footer {
+        width: 100vw;
+        padding-top: 30px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        display: flex;
+        text-align: center;
+        background: var(--primary-color);
+        font-size: 20px;
+        color: var(--light-gray-color);
+        font-family: 'Roboto', sans-serif;
+        background: url(../images/opening-image.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    .submitted-form-page-main-content {
+        height: 100vh;
+        width: 80vw;
+        text-align: center;
+        align-items: center;
+        padding-top: 200px;
+        margin: auto 200px;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+    }
+
+    #back-to-home-button {
+        border: 2px solid var(--white-color);
+        border-radius: 20px;
+        background: var(--primary-color);
+        color: var(--white-color);
+        padding: 20px;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    #back-to-home-button:hover {
+        background: var(--secondary-color);
+        cursor: pointer;
+    }
+
+}
